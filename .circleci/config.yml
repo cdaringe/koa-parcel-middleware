@@ -45,6 +45,12 @@ jobs:
       - run: yarn build
       - run: yarn test
       - run: yarn lint
+      - run:
+          command: |
+            if [ "$CIRCLE_BRANCH" = "master" ];
+            then
+              npx semantic-release
+            fi
       # - run:
       #     name: release
       #     command: npm run semantic-release || true
