@@ -36,8 +36,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
       - run:
-          name: bootstrap
-          command: NODE_ENV=development yarn bootstrap
+          name: install
+          command: NODE_ENV=development yarn
       - save_cache:
           paths:
             - node_modules
