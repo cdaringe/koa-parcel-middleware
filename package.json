@@ -3,7 +3,11 @@
   "description": "parcel bundler koa middleware",
   "version": "0.0.0-semantic-release",
   "main": "src/middleware.js",
-  "files": ["src/middleware.js", "src/middleware.d.ts", "src/middleware.d.ts.map"],
+  "files": [
+    "src/middleware.js",
+    "src/middleware.d.ts",
+    "src/middleware.d.ts.map"
+  ],
   "author": "cdaringe <cdaringe@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
@@ -11,6 +15,8 @@
     "koa-static": ">4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
     "@types/koa": "^2.0.48",
     "@types/koa-static": "^4.0.1",
     "@types/parcel-bundler": "^1.10.2",
@@ -27,11 +33,13 @@
     "build": "tsc",
     "format": "prettier-standard '{src,test,scripts}/**/*.{js,jsx,ts,tsx}'",
     "lint": "standard '{src,test,scripts}/**/*.{js,jsx,ts,tsx}'",
+    "precommit": "lint-staged && yarn lint",
     "test": "echo ':('"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn precommit",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
