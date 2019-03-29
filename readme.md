@@ -17,7 +17,7 @@ parcel middleware enables you to:
 `yarn add koa-parcel-middleware koa koa-static`
 
 koa and koa-static are required peerDependencies.  koa-static is required such that
-non-js assets (e.g. css )
+non-js assets (e.g. css, images, etc) may be served gracefully as requested by your ui.
 
 ## usage
 
