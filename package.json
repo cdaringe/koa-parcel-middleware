@@ -2,6 +2,7 @@
   "name": "koa-parcel-middleware",
   "description": "parcel bundler koa middleware",
   "version": "0.0.0-semantic-release",
+  "repository": "git@github.com:cdaringe/koa-parcel-middleware.git",
   "main": "src/middleware.js",
   "files": [
     "src/middleware.js",
