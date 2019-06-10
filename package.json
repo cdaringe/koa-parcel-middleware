@@ -4,7 +4,7 @@
   "version": "0.0.0-semantic-release",
   "repository": "git@github.com:cdaringe/koa-parcel-middleware.git",
   "main": "src/middleware.js",
-  "keywords": ["koa", "koajs", "parcel", "parcel-bundler", "middleware", "ssr", "hmr"],
+  "keywords": ["koa", "koajs", "parcel", "parcel-bundler", "middleware", "ssr", "hmr", "isomorphic"],
   "files": [
     "src/middleware.js",
     "src/middleware.d.ts",

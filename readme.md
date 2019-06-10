@@ -8,21 +8,20 @@
 
 parcel middleware enables you to:
 
+- wire in advanced features, such as server-side-rendering. isomorphic js in compact form
 - serve your ui application _from_ your server application
-- wire in advanced features, such as server-side-rendering
 - combine the parcel dev server functionality _with_ an existing server application, rather than an extra process
 
 ## install
 
 `yarn add koa-parcel-middleware koa koa-static`
 
-koa and koa-static are required peerDependencies.  koa-static is required such that
+koa and koa-static are required `peerDependencies`.  koa-static is required such that
 non-js assets (e.g. css, images, etc) may be served gracefully as requested by your ui.
 
 ## usage
 
 ```ts
-// api preview
 import { createMiddleware } from 'koa-parcel-middleware'
 const middleware = createMiddleware({
   bundler: `parcelBundlerInstance`,
