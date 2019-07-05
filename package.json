@@ -13,8 +13,8 @@
   "author": "cdaringe <cdaringe@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "koa": ">2",
-    "koa-static": ">4"
+    "koa": ">=2",
+    "koa-static": ">=4"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
