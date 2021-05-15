@@ -17,8 +17,8 @@
     "koa-static": ">=4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
-    "@commitlint/config-conventional": "^7.5.0",
+    "@commitlint/cli": "7.6.1",
+    "@commitlint/config-conventional": "7.6.0",
     "@types/koa": "^2.0.48",
     "@types/koa-static": "^4.0.1",
     "@types/parcel-bundler": "^1.10.2",
