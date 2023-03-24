@@ -423,9 +423,7 @@
     "@types/mime" "*"
 
 "@typescript-eslint/parser@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-1.5.0.tgz#a96114d195dff2a49534e4c4850fb676f905a072"
-  integrity sha512-pRWTnJrnxuT0ragdY26hZL+bxqDd4liMlftpH2CBlMPryOIOb1J+MdZuw6R4tIu6bWVdwbHKPTs+Q34LuGvfGw==
+  version "1.13.0"
   dependencies:
     "@typescript-eslint/typescript-estree" "1.5.0"
     eslint-scope "^4.0.0"
